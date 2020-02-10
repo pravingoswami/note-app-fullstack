@@ -40,13 +40,14 @@ class NoteForm extends React.Component{
             // noteImage : this.state.noteImage
 
         }
+        console.log(formData)
 
         const form = new FormData()
         for(let key in formData){
             form.append(key, formData[key])
         }
         form.append('noteImage', this.state.noteImage)
-        console.log(formData)
+        console.log(form)
 
         this.props.handleSubmit(form)
     }

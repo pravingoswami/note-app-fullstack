@@ -1,11 +1,7 @@
 const mongoose = require('mongoose')
 
-
 // this is the constructor
 const Schema = mongoose.Schema
-
-
-
 
 // creating the schema for the collection
 const noteSchema = new Schema({
@@ -34,6 +30,5 @@ const noteSchema = new Schema({
 })
 
 const Note = mongoose.model('Note', noteSchema)
-
 
 module.exports = Note

@@ -19,6 +19,7 @@ class NoteNew extends React.Component {
                 "Content-Type": "multipart/form-data;boundary=----WebKitFormBoundaryyrV7KO0BoCBuDbTL"
             }
         }
+        console.log(formData)
 
         axios.post('/notes', formData, config)
 
